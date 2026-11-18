@@ -60,5 +60,5 @@ func UploadHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Отправляем ответ в браузер (что всё прошло успешно)
 	w.Header().Set("Content-Type", "text/plain; charset=utf-8")
-	fmt.Fprintf(w, "Файл успешно сконвертирован!\nРезультат:\n\n%s\n\nСохранено в файл: %s", result, fileName)
+	fmt.Fprintf(w, "%s", result)
 }
